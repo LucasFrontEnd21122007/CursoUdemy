@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen">
     <title>Contact Form</title>
 </head>
 <body>
@@ -19,7 +20,16 @@
     </div>
 
     <form action="processarFormulário.js" method="post">
-        <label for="Horários">Selecione o Horário da nossa Reunião Inicial</label>
+        <label for="Horários">Selected the hour the our first meeting</label>
+        <option selected disabled value="">Selected</option>
+        <label for="horario">Escolha um horário:</label>
+    <select id="horario" name="horario">
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <textarea row="6" style="width: 26em"></textarea>
+        <button type="submit">Enviar</button>
     </form>
-
+    <link href="index.js">
 </body>
